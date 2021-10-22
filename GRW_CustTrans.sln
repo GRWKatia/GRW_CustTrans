@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FC65038C-1B2F-41E1-A629-BED71D161FFF}") = "GRW_CustTrans (USR) [GRW_CustTrans]", "GRW_CustTrans\GRW_CustTrans.rnrproj", "{B8ADAEFB-14DD-409A-8541-4928055A0975}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B8ADAEFB-14DD-409A-8541-4928055A0975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8ADAEFB-14DD-409A-8541-4928055A0975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {814CD5FF-345C-4C78-B34B-087912BE7204}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <BuildTasksDirectory Condition=" '$(BuildTasksDirectory)' == ''">$(MSBuildProgramFiles32)\MSBuild\Microsoft\Dynamics\AX</BuildTasksDirectory>
+    <Model>GRW_CustTrans</Model>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <OutputPath>bin</OutputPath>
+    <SchemaVersion>2.0</SchemaVersion>
+    <GenerateCrossReferences>True</GenerateCrossReferences>
+    <RunAppCheckerRules>False</RunAppCheckerRules>
+    <LogAppcheckerDiagsAsErrors>False</LogAppcheckerDiagsAsErrors>
+    <ProjectGuid>{b8adaefb-14dd-409a-8541-4928055a0975}</ProjectGuid>
+    <Name>GRW_CustTrans</Name>
+    <RootNamespace>GRW_CustTrans</RootNamespace>
+    <StartupObject>GRW_CustTrans</StartupObject>
+    <StartupType>MenuItemOutput</StartupType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <Configuration>Debug</Configuration>
+    <DBSyncInBuild>False</DBSyncInBuild>
+    <GenerateFormAdaptors>False</GenerateFormAdaptors>
+    <Company>
+    </Company>
+    <Partition>initial</Partition>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DataEntityExpandParentChildRelations>False</DataEntityExpandParentChildRelations>
+    <DataEntityUseLabelTextAsFieldName>False</DataEntityUseLabelTextAsFieldName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Classes\" />
+    <Folder Include="Label Files\" />
+    <Folder Include="Menu Extensions\" />
+    <Folder Include="Output Menu Items\" />
+    <Folder Include="Reports\" />
+    <Folder Include="Table Extensions\" />
+    <Folder Include="Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxClass\GRW_CustTransContract">
+      <SubType>Content</SubType>
+      <Name>GRW_CustTransContract</Name>
+      <Link>Classes\GRW_CustTransContract</Link>
+    </Content>
+    <Content Include="AxClass\GRW_CustTransDP">
+      <SubType>Content</SubType>
+      <Name>GRW_CustTransDP</Name>
+      <Link>Classes\GRW_CustTransDP</Link>
+    </Content>
+    <Content Include="AxLabelFile\GRWCrustTrans_en-US">
+      <SubType>Content</SubType>
+      <Name>GRWCrustTrans_en-US</Name>
+      <Link>Label Files\GRWCrustTrans_en-US</Link>
+    </Content>
+    <Content Include="AxMenuExtension\AccountsReceivable.GRW_CustTrans">
+      <SubType>Content</SubType>
+      <Name>AccountsReceivable.GRW_CustTrans</Name>
+      <Link>Menu Extensions\AccountsReceivable.GRW_CustTrans</Link>
+    </Content>
+    <Content Include="AxMenuItemOutput\GRW_CustTrans">
+      <SubType>Content</SubType>
+      <Name>GRW_CustTrans</Name>
+      <Link>Output Menu Items\GRW_CustTrans</Link>
+    </Content>
+    <Content Include="AxReport\GRW_CustTrans">
+      <SubType>Content</SubType>
+      <Name>GRW_CustTrans</Name>
+      <Link>Reports\GRW_CustTrans</Link>
+    </Content>
+    <Content Include="AxTableExtension\CustTable.GRW_CustTrans">
+      <SubType>Content</SubType>
+      <Name>CustTable.GRW_CustTrans</Name>
+      <Link>Table Extensions\CustTable.GRW_CustTrans</Link>
+    </Content>
+    <Content Include="AxTableExtension\CustTrans.GRW_CustTrans">
+      <SubType>Content</SubType>
+      <Name>CustTrans.GRW_CustTrans</Name>
+      <Link>Table Extensions\CustTrans.GRW_CustTrans</Link>
+    </Content>
+    <Content Include="AxTableExtension\InventTable.GRW_CustTrans">
+      <SubType>Content</SubType>
+      <Name>InventTable.GRW_CustTrans</Name>
+      <Link>Table Extensions\InventTable.GRW_CustTrans</Link>
+    </Content>
+    <Content Include="AxTableExtension\SalesLine.GRW_CustTrans">
+      <SubType>Content</SubType>
+      <Name>SalesLine.GRW_CustTrans</Name>
+      <Link>Table Extensions\SalesLine.GRW_CustTrans</Link>
+    </Content>
+    <Content Include="AxTableExtension\SalesTable.GRW_CustTrans">
+      <SubType>Content</SubType>
+      <Name>SalesTable.GRW_CustTrans</Name>
+      <Link>Table Extensions\SalesTable.GRW_CustTrans</Link>
+    </Content>
+    <Content Include="AxTableExtension\TransactionTextParameterSetup.GRW_CustTrans">
+      <SubType>Content</SubType>
+      <Name>TransactionTextParameterSetup.GRW_CustTrans</Name>
+      <Link>Table Extensions\TransactionTextParameterSetup.GRW_CustTrans</Link>
+    </Content>
+    <Content Include="AxTable\GRW_CrustTransTmp">
+      <SubType>Content</SubType>
+      <Name>GRW_CrustTransTmp</Name>
+      <Link>Tables\GRW_CrustTransTmp</Link>
+    </Content>
+    <Content Include="GRWCrustTrans.en-US.label.txt">
+      <SubType>Content</SubType>
+      <Name>GRWCrustTrans.en-US.label.txt</Name>
+      <DependentUpon>AxLabelFile\GRWCrustTrans_en-US</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.Common.targets" />
+  <Import Project="$(BuildTasksDirectory)\Microsoft.Dynamics.Framework.Tools.BuildTasks.targets" />
+</Project>
